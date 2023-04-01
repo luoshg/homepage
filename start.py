@@ -139,7 +139,7 @@ if first_excution == 'n' or first_excution == 'N':
     DB_PASS = cf.get('config', 'DB_PASS')
     DB_HOST = cf.get('config', 'DB_HOST')
     DB_USER = cf.get('config', 'DB_USER')
-    db = pymysql.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASS, db='PersonalHomepage', charset='utf8')
+    db = pymysql.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASS, db='homepage', charset='utf8')
     executeScriptsFromFile(INIT_SQL_PATH, db)
     print('初始化SQL执行完成，应用的默认用户名初始化为：admin，默认密码为：123456')
     exit()
@@ -281,7 +281,7 @@ try:
     DB_PASS = cf.get('config', 'DB_PASS')
     DB_HOST = cf.get('config', 'DB_HOST')
     DB_USER = cf.get('config', 'DB_USER')
-    db = pymysql.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASS, db='PersonalHomepage', charset='utf8')
+    db = pymysql.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASS, db='homepage', charset='utf8')
     executeScriptsFromFile(INIT_SQL_PATH, db)
     print('初始化SQL执行完成，应用的默认用户名初始化为：admin，默认密码为：123456')
 
